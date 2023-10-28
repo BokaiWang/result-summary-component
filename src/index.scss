@@ -9,10 +9,11 @@ $dark-gray-blue: hsl(224, 30%, 27%);
 $font-weight-500: 500;
 $font-weight-700: 700;
 $font-weight-800: 800;
+$border-radius: 2rem;
 
 *,
-::after,
-::before {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -20,4 +21,26 @@ body {
   margin: 0;
   font-family: "Hanken Grotesk", "Kumbh Sans", sans-serif;
   font-size: 18px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: $pale-blue;
+}
+
+.card {
+  background: linear-gradient(to bottom, $light-slate-blue, $light-royal-blue);
+  border-radius: $border-radius;
+  &__container {
+    max-width: 600px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    background-color: $white;
+    border-radius: $border-radius;
+  }
 }
