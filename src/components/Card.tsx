@@ -1,8 +1,12 @@
+import Description from "./Description";
+import Score from "./Score";
+
 const Card = () => {
   return (
     <div className="card">
-      Your Result 76 of 100 Great You scored higher than 65% of the people who
-      have taken these tests.
+      <div className="card__title">Your Result</div>
+      <Score>76</Score>
+      <Description assessment="Great" percentage={65} />
     </div>
   );
 };
