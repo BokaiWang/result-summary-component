@@ -27,13 +27,16 @@ const SummaryItem = ({ category, score }: Props) => {
   }
 
   return (
-    <div>
-      <div>
+    <div className={`summary__item summary__item--${category.toLowerCase()}`}>
+      <div
+        className={`summary__item__title-container summary__item__title-container--${category.toLowerCase()}`}
+      >
         <img src={icon} />
         <div>{category}</div>
       </div>
-      <div>
-        <span>{score}</span>/ 100
+      <div className="summary__score">
+        {score}
+        <span className="summary__score-baseline"> / 100</span>
       </div>
     </div>
   );
