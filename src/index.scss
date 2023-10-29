@@ -1,3 +1,11 @@
+$light-red: hsl(0, 100%, 67%, 1);
+$light-red-background: hsla(0, 100%, 67%, 0.1);
+$orangey-yellow: hsl(39, 100%, 56%);
+$orangey-yellow-background: hsla(39, 100%, 56%, 0.1);
+$green-teal: hsl(166, 100%, 37%);
+$green-teal-background: hsla(166, 100%, 37%, 0.1);
+$cobalt-blue: hsl(234, 85%, 45%);
+$cobalt-blue-background: hsla(234, 85%, 45%, 0.1);
 $light-slate-blue: hsl(252, 100%, 67%);
 $light-royal-blue: hsl(241, 81%, 54%);
 $violet-blue: hsla(256, 72%, 46%, 1);
@@ -42,6 +50,7 @@ body {
   padding-left: 25px;
   padding-right: 25px;
   gap: 25px;
+  flex: 1;
   &__container {
     max-width: 600px;
     width: 50%;
@@ -82,4 +91,9 @@ body {
     color: $light-lavender;
     font-size: 14px;
   }
+}
+
+img {
+  width: 20px;
+  height: 20px;
 }

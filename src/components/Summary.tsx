@@ -1,8 +1,13 @@
+import SummaryItem from "./SummaryItem";
+import data from "../data.json";
+
 const Summary = () => {
   return (
     <div>
-      Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61 / 100 Visual 72 / 100
-      Continue
+      <div>Summary</div>
+      {data.map(({ category, score }) => (
+        <SummaryItem key={category} category={category} score={score} />
+      ))}
     </div>
   );
 };
