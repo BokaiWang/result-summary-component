@@ -4,7 +4,7 @@ import Summary from "./components/Summary";
 function App() {
   return (
     <main className="container">
-      <div className="card__container">
+      <div className="result-container">
         <Card />
         <Summary />
       </div>

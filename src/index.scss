@@ -40,6 +40,15 @@ body {
   background-color: $pale-blue;
 }
 
+.result-container {
+  max-width: 650px;
+  min-width: 550px;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  background-color: $white;
+  border-radius: $border-radius;
+}
 .card {
   background: linear-gradient(to bottom, $light-slate-blue, $light-royal-blue);
   border-radius: $border-radius;
@@ -50,15 +59,6 @@ body {
   padding: 20px;
   gap: 25px;
   flex: 1;
-  &__container {
-    max-width: 650px;
-    min-width: 550px;
-    width: 50%;
-    height: 50%;
-    display: flex;
-    background-color: $white;
-    border-radius: $border-radius;
-  }
   &__title {
     color: $light-lavender;
   }
@@ -158,5 +158,26 @@ img {
 
   &:hover {
     background: $light-royal-blue;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: block;
+    background: $white;
+  }
+  .summary {
+    gap: 10px;
+  }
+  .result-container {
+    display: block;
+    min-width: unset;
+    width: 100%;
+    border-radius: unset;
+  }
+  .card {
+    margin-bottom: 10px;
+    border-radius: 0 0 $border-radius $border-radius;
+    gap: 10px;
   }
 }
