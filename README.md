@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://rad-smakager-412ba0.netlify.app)
+- Live Site URL: [My solution site](https://rad-smakager-412ba0.netlify.app)
 
 ## My process
 
